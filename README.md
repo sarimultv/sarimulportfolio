@@ -1,8 +1,3 @@
-# React + Vite
+# Sarimul Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sarimul Portfolio will showcase the work and projects I have worked on, showcasing my contributions and the skills I possess. The portfolio will include detailed descriptions of each project, outlining the technologies used, my specific role, and links to live demos or repositories.
