@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       gradientColorStopPositions: {
-        50: "50%",
+        40: "40%",
       },
     },
   },

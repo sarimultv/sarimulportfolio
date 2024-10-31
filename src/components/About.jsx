@@ -1,10 +1,10 @@
-import React from "react";
+import { FaDownload } from "react-icons/fa6";
 
 const About = () => {
   return (
     <div className="h-screen w-screen">
       <h1 className="uppercase font-bold text-4xl flex justify-center mt-20">
-        About Me
+        About <span className="text-yellow-500">Me</span>
       </h1>
       <div className="flex items-center mt-20 ml-20">
         <div className="w-[50%] mr-10 p-2">
@@ -49,11 +49,16 @@ const About = () => {
               </p>
             </div>
           </div>
-          <input
-            className="font-bold uppercase p-2 border border-yellow-500 rounded-2xl cursor-pointer hover:bg-yellow-500 hover:text-white w-[90%]"
-            type="button"
-            value={"Download CV"}
-          />
+          <div className="flex items-center">
+            <input
+              className="font-bold uppercase p-2 border border-yellow-500 rounded-l-2xl cursor-pointer hover:bg-yellow-500 hover:text-white w-[30%]"
+              type="button"
+              value={"Download CV"}
+            />
+            <span className="bg-yellow-500 py-2 px-3 rounded-r-2xl">
+              <FaDownload />
+            </span>
+          </div>
         </div>
         <div className="w-[50%] p-2 flex items-center justify-center flex-wrap">
           <div className="border border-gray-500 rounded-lg p-4 m-2 w-[45%] h-[10rem]">

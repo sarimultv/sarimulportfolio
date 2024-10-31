@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="px-10 py-11 h-screen bg-gradient-to-r from-yellow-500 to-50">
+    <div className="px-10 py-11 h-screen bg-gradient-to-r from-yellow-500 to-40">
       <div className="flex items-center justify-between">
         <div className="w-[45%]">
           <img
@@ -20,9 +20,12 @@ const Banner = () => {
         </div>
         <div className="w-[50%]">
           <div className="font-bold uppercase py-5">
-            <h1 className="text-4xl">- I'm {USER_NAME}.</h1>
-            <h1 className="text-lg">{USER_ROLE}</h1>
-            <p className="text-lg">{USER_COMPANY}</p>
+            <h1 className="text-4xl">
+              - I'm <span className="text-yellow-500">{USER_NAME}</span>.
+            </h1>
+            <h1 className="text-lg">
+              {USER_ROLE} at {USER_COMPANY}
+            </h1>
           </div>
           <div className="w-[90%]">
             <p>{USER_INTRO}</p>

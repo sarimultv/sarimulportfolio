@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="h-screen">
       <h1 className="uppercase font-bold text-4xl flex justify-center mt-20">
-        Contact Me
+        Contact <span className="text-yellow-500">Me</span>
       </h1>
       <div className="flex items-center mt-20">
         <div className="w-[40%] ml-10">

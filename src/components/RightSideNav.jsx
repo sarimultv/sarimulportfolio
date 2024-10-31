@@ -6,6 +6,7 @@ import { MdLocalPostOffice } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { initialMode } from "../store/themeSlice";
+import { PiSuitcaseSimpleBold } from "react-icons/pi";
 
 const RightSideNav = () => {
   const dispatch = useDispatch();
@@ -30,6 +31,13 @@ const RightSideNav = () => {
           <li className="flex justify-center items-center p-5 bg-gray-200 text-black rounded-full hover:bg-yellow-500 hover:text-white">
             <span className="hidden">About</span>
             <FaUser size={20} />
+          </li>
+        </Link>
+
+        <Link to={"/projects"}>
+          <li className="flex justify-center items-center my-2 p-5 bg-gray-200 text-black rounded-full hover:bg-yellow-500 hover:text-white">
+            <span className="hidden">Projects</span>
+            <PiSuitcaseSimpleBold size={20} />
           </li>
         </Link>
 

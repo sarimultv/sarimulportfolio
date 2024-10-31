@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import appStore from "./store/appStore";
 import Home from "./components/Home";
 import Banner from "./components/Banner";
+import Projects from "./components/Projects";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/projects",
+          element: <Projects />,
         },
       ],
     },
