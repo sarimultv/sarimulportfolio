@@ -1,4 +1,11 @@
-import { PROFILE_PICTURE_LINK, USER_NAME } from "../utils/constants";
+import {
+  PROFILE_PICTURE_LINK,
+  USER_COMPANY,
+  USER_INTRO,
+  USER_NAME,
+  USER_ROLE,
+} from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -12,21 +19,21 @@ const Banner = () => {
           />
         </div>
         <div className="w-[50%]">
-          <div className="font-bold text-4xl uppercase py-5">
-            <h1>- I'm {USER_NAME}.</h1>
-            <h1>web designer</h1>
+          <div className="font-bold uppercase py-5">
+            <h1 className="text-4xl">- I'm {USER_NAME}.</h1>
+            <h1 className="text-lg">{USER_ROLE}</h1>
+            <p className="text-lg">{USER_COMPANY}</p>
           </div>
           <div className="w-[90%]">
-            <p>
-              I'm an Indian based web designer & front‑end developer focused on
-              crafting clean & user‑friendly experiences, I am passionate about
-              building excellent software that improves the lives of those
-              around me.
-            </p>
+            <p>{USER_INTRO}</p>
             <div className="flex items-center pt-10">
-              <button className="font-bold uppercase p-4 border border-yellow-500 rounded-2xl cursor-pointer hover:bg-yellow-500 hover:text-white">
-                more about me
-              </button>
+              <ul>
+                <Link to={"/about"}>
+                  <li className="font-bold uppercase p-4 border border-yellow-500 rounded-2xl cursor-pointer hover:bg-yellow-500 hover:text-white">
+                    more about me
+                  </li>
+                </Link>
+              </ul>
             </div>
           </div>
         </div>
