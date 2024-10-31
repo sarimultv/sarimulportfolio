@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 const Home = () => {
   const mode = useSelector((store) => store.appTheme.mode);
   const textColor = useSelector((store) => store.appTheme.textColor);
-  console.log(mode);
+
   return (
     <div
       style={{ backgroundColor: `${mode}`, color: `${textColor}` }}

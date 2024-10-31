@@ -1,6 +1,10 @@
 import React from "react";
 
 const Contact = () => {
+  const handleFormData = (evt) => {
+    evt.preventDefault();
+  };
+
   return (
     <div className="h-screen">
       <h1 className="uppercase font-bold text-4xl flex justify-center mt-20">
@@ -30,7 +34,7 @@ const Contact = () => {
             <p className="cursor-pointer">+91 7896086210</p>
           </div>
         </div>
-        <form className="w-[60%]">
+        <form className="w-[60%]" onSubmit={handleFormData}>
           <input
             type="text"
             className="p-2 border border-gray-500 outline-yellow-500 bg-transparent rounded-2xl w-[43%] mr-4 mb-4"
@@ -38,7 +42,7 @@ const Contact = () => {
           />
 
           <input
-            type="text"
+            type="email"
             className="p-2 border border-gray-500 outline-yellow-500 bg-transparent rounded-2xl w-[43%] ml-4 mb-4"
             placeholder="Enter Your Email"
           />

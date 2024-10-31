@@ -49,15 +49,13 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="p-2 flex items-center justify-center cursor-pointer border border-yellow-500 hover:bg-yellow-500 hover:text-white ">
             <input
-              className="font-bold uppercase p-2 border border-yellow-500 rounded-l-2xl cursor-pointer hover:bg-yellow-500 hover:text-white w-[30%]"
+              className="font-bold uppercase p-2 cursor-pointer"
               type="button"
               value={"Download CV"}
             />
-            <span className="bg-yellow-500 py-2 px-3 rounded-r-2xl">
-              <FaDownload />
-            </span>
+            <FaDownload />
           </div>
         </div>
         <div className="w-[50%] p-2 flex items-center justify-center flex-wrap">

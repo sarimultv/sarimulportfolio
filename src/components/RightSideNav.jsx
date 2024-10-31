@@ -11,7 +11,6 @@ import { PiSuitcaseSimpleBold } from "react-icons/pi";
 const RightSideNav = () => {
   const dispatch = useDispatch();
   const handleAppTheme = () => {
-    console.log("clicked");
     dispatch(initialMode());
   };
 

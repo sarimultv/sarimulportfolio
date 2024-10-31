@@ -5,7 +5,7 @@ const Project = ({ item }) => {
   const { projectName, projectURL, githubLink, imageSrc } = item;
 
   return (
-    <div className="border border-gray-500 rounded-lg p-4 m-2 w-[30%] cursor-pointer hover:bg-gray-100">
+    <div className="border border-gray-500 rounded-lg p-4 m-2 w-[30%] cursor-pointer ">
       <div className="flex items-center justify-between">
         <Link to={projectURL}>
           <p className="text-4xl font-bold my-2 text-yellow-500">
