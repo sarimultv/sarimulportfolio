@@ -17,8 +17,8 @@ const RightSideNav = () => {
   const mode = useSelector((store) => store.appTheme.mode);
 
   return (
-    <div className="w-[5%] mr-10">
-      <ul>
+    <div className="md:w-[5%] md:mr-10 bottom-0 sticky">
+      <ul className="md:flex-col flex items-center gap-4 justify-center">
         <Link to={"/"}>
           <li className="flex justify-center items-center mb-2 p-5 bg-gray-200 text-black rounded-full hover:bg-yellow-500 hover:text-white">
             <span className="hidden">Home</span>

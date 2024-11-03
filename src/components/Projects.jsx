@@ -3,11 +3,11 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <div className="w-screen h-screen pb-2">
-      <h1 className="uppercase font-bold text-4xl flex justify-center mt-20">
+    <div className="md:w-screen md:h-screen pb-2">
+      <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-20 pt-6">
         My <span className="text-yellow-500">Portfolio</span>
       </h1>
-      <div className="mt-20 mx-5 flex items-center justify-center flex-wrap">
+      <div className="md:mt-20 md:mx-5 md:flex md:items-center md:justify-center md:flex-wrap mt-6">
         {items.map((item) => (
           <Project key={item.id} item={item} />
         ))}

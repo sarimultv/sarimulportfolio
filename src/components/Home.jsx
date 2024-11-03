@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div
       style={{ backgroundColor: `${mode}`, color: `${textColor}` }}
-      className="flex items-center"
+      className="md:flex md:items-center"
     >
       <Outlet />
       <RightSideNav />

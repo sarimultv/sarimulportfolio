@@ -7,7 +7,7 @@ const themeSlice = createSlice({
     textColor: "black",
   },
   reducers: {
-    initialMode: (state, action) => {
+    initialMode: (state) => {
       state.mode === "white"
         ? ((state.mode = "black"), (state.textColor = "white"))
         : ((state.mode = "white"), (state.textColor = "black"));

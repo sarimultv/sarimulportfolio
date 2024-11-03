@@ -9,27 +9,27 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="px-10 py-11 h-screen bg-gradient-to-r from-yellow-500 to-40">
-      <div className="flex items-center justify-between">
-        <div className="w-[45%]">
+    <div className="md:px-10 md:py-11 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 p-4">
+      <div className="md:flex md:items-center md:justify-between">
+        <div className="md:w-[45%] flex justify-center py-4">
           <img
-            className="rounded-3xl shadow-lg w-[80%] h-[35rem] object-cover"
+            className="md:rounded-3xl md:w-[80%] md:h-[35rem] w-[60%] rounded-full border border-yellow-500 shadow-lg object-cover"
             src={PROFILE_PICTURE_LINK}
             alt="Users' profile picture"
           />
         </div>
-        <div className="w-[50%]">
-          <div className="font-bold uppercase py-5">
-            <h1 className="text-4xl">
+        <div className="md:w-[50%]">
+          <div className="font-bold md:py-5 py-2">
+            <h1 className="md:text-4xl text-2xl uppercase">
               - I'm <span className="text-yellow-500">{USER_NAME}</span>.
             </h1>
-            <h1 className="text-lg">
+            <h1 className="md:text-lg capitalize">
               {USER_ROLE} at {USER_COMPANY}
             </h1>
           </div>
-          <div className="w-[90%]">
-            <p>{USER_INTRO}</p>
-            <div className="flex items-center pt-10">
+          <div className="md:w-[90%] pb-4">
+            <p className="pt-2">{USER_INTRO}</p>
+            <div className="md:flex md:items-center md:pt-10 flex justify-center pt-5">
               <ul>
                 <Link to={"/about"}>
                   <li className="font-bold uppercase p-4 border border-yellow-500 rounded-2xl cursor-pointer hover:bg-yellow-500 hover:text-white">
