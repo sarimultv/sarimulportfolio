@@ -6,6 +6,7 @@ import {
   USER_COMPANY_JOINING_DATE,
   USER_COURSE,
   USER_COURSE_COMPLETION_DATE,
+  USER_COURSE_JOINING_DATE,
   USER_ROLE,
 } from "../utils/constants";
 import { useSelector } from "react-redux";
@@ -14,13 +15,13 @@ const Educations = () => {
   const mode = useSelector((store) => store.appTheme.mode);
 
   return (
-    <div className="py-2">
+    <div className="py-2 px-4">
       <h1 className="uppercase font-bold text-2xl flex justify-center md:mt-5 pt-6">
         Experience & Education
       </h1>
-      <div className="flex items-center">
+      <div className="md:flex md:items-center py-6">
         <div className="md:w-[100%] md:my-10 flex items-center justify-center md:ml-5">
-          <ul className="relative -mt-14">
+          <ul className="relative md:-mt-14 -mt-24">
             <li className="my-2 p-3 rounded-full bg-yellow-500 text-white">
               <PiSuitcaseSimpleBold size={20} />
             </li>
@@ -40,8 +41,8 @@ const Educations = () => {
           </div>
         </div>
 
-        <div className="md:w-[100%] md:my-10 flex items-center justify-center md:ml-5">
-          <ul className="relative -mt-14">
+        <div className="md:w-[100%] md:my-10 flex items-center justify-center md:ml-5 mt-6">
+          <ul className="relative md:-mt-14 -mt-[8rem]">
             <li className="my-2 p-3 rounded-full bg-yellow-500 text-white">
               <PiSuitcaseSimpleBold size={20} />
             </li>
@@ -52,7 +53,7 @@ const Educations = () => {
                 mode === "white" ? "bg-gray-200" : "bg-gray-900"
               }`}
             >
-              {USER_COURSE_COMPLETION_DATE}
+              {USER_COURSE_JOINING_DATE} - {USER_COURSE_COMPLETION_DATE}
             </span>
             <h2 className="my-2 font-semibold uppercase">
               {USER_COURSE} - {USER_COLLEGE}

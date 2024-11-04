@@ -9,4 +9,5 @@ export const USER_COMPANY_JOINING_DATE = "2022";
 export const USER_COLLEGE = "Assam University";
 export const USER_COURSE = "Computer Science & Engineering";
 export const USER_COLLEGE_LOCATION = "Silchar";
+export const USER_COURSE_JOINING_DATE = "2016";
 export const USER_COURSE_COMPLETION_DATE = "2020";
