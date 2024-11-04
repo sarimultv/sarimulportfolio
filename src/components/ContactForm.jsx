@@ -84,7 +84,7 @@ const ContactForm = () => {
         <p className="py-2 text-green-700">Mail sent successfully!</p>
       )}
       {errMsg && (
-        <p className="py-2 text-red-900">Error sending mail, try again?</p>
+        <p className="py-2 text-red-900">Error sending mail, try again.</p>
       )}
     </form>
   );
