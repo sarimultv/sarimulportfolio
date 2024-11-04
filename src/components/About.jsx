@@ -3,6 +3,7 @@ import Skills from "./Skills";
 import Educations from "./Educations";
 import { useSelector } from "react-redux";
 import Border from "./Border";
+import BannerPhoto from "./BannerPhoto";
 
 const About = () => {
   const mode = useSelector((store) => store.appTheme.mode);
@@ -14,6 +15,9 @@ const About = () => {
       <div className="md:flex md:items-center md:mt-20 md:ml-20 mt-4 mb-6">
         <div className="md:w-[50%] md:mr-10 p-2">
           <h1 className="uppercase font-bold text-2xl mb-4">Personal Info</h1>
+          <span className="sm:hidden block">
+            <BannerPhoto />
+          </span>
           <div className="md:flex md:items-center mb-4">
             <div className="md:mr-2">
               <p className="mb-2 flex items-center gap-2">

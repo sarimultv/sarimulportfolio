@@ -1,23 +1,17 @@
 import {
-  PROFILE_PICTURE_LINK,
   USER_COMPANY,
   USER_INTRO,
   USER_NAME,
   USER_ROLE,
 } from "../utils/constants";
 import { Link } from "react-router-dom";
+import BannerPhoto from "./BannerPhoto";
 
 const Banner = () => {
   return (
-    <div className="md:px-10 md:py-7 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 p-4">
+    <div className="md:px-10 md:py-7 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 w-full h-full p-4">
       <div className="md:flex md:items-center md:justify-between">
-        <div className="md:w-[45%] flex justify-center py-4">
-          <img
-            className="md:rounded-3xl md:w-[80%] md:h-[35rem] w-[60%] rounded-full border border-yellow-500 shadow-lg object-cover"
-            src={PROFILE_PICTURE_LINK}
-            alt="Users' profile picture"
-          />
-        </div>
+        <BannerPhoto />
         <div className="md:w-[50%]">
           <div className="font-bold md:py-5 py-2">
             <h1 className="md:text-4xl text-2xl uppercase">

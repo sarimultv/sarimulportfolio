@@ -4,13 +4,13 @@ const themeSlice = createSlice({
   name: "appTheme",
   initialState: {
     mode: "white",
-    textColor: "black",
+    textColor: "#1A1A1A",
   },
   reducers: {
     initialMode: (state) => {
       state.mode === "white"
-        ? ((state.mode = "black"), (state.textColor = "white"))
-        : ((state.mode = "white"), (state.textColor = "black"));
+        ? ((state.mode = "#1A1A1A"), (state.textColor = "white"))
+        : ((state.mode = "white"), (state.textColor = "#1A1A1A"));
     },
   },
 });
