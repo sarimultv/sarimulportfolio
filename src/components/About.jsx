@@ -4,9 +4,14 @@ import Educations from "./Educations";
 import { useSelector } from "react-redux";
 import Border from "./Border";
 import BannerPhoto from "./BannerPhoto";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const mode = useSelector((store) => store.appTheme.mode);
+
+  const resumeFileUrl = "./Sarimul_Laskar.pdf";
+  const resumeFileName = "Sarimul_Laskar.pdf";
+
   return (
     <div className="md:w-[100%] pb-2">
       <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-5 pt-6">
@@ -108,12 +113,13 @@ const About = () => {
             </div>
           </div>
           <div className="p-2 flex items-center justify-center cursor-pointer border border-yellow-500 hover:bg-yellow-500 hover:text-white ">
-            <input
-              className="font-bold uppercase p-2 cursor-pointer"
-              type="button"
-              value={"Download CV"}
-            />
-            <FaDownload />
+            <a href={resumeFileUrl} download={resumeFileName}>
+              <input
+                className="font-bold uppercase p-2 cursor-pointer"
+                type="button"
+                value={"Download CV"}
+              />
+            </a>
           </div>
         </div>
         <div className="md:w-[50%] p-2 flex items-center justify-center flex-wrap">

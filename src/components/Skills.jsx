@@ -10,7 +10,7 @@ const Skills = () => {
       <div className="md:w-[100%] my-5">
         <ul className="flex items-center justify-evenly flex-wrap">
           {skills.map((item) => (
-            <Skill skills={item} />
+            <Skill key={item.id} skills={item} />
           ))}
         </ul>
       </div>

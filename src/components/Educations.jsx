@@ -2,7 +2,9 @@ import React from "react";
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
 import {
   USER_COLLEGE,
+  USER_COLLEGE_DESCRIPTION,
   USER_COMPANY,
+  USER_COMPANY_DESCRIPTION,
   USER_COMPANY_JOINING_DATE,
   USER_COURSE,
   USER_COURSE_COMPLETION_DATE,
@@ -37,7 +39,7 @@ const Educations = () => {
             <h2 className="my-2 font-semibold uppercase">
               {USER_ROLE} - {USER_COMPANY}
             </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>{USER_COMPANY_DESCRIPTION}</p>
           </div>
         </div>
 
@@ -58,7 +60,7 @@ const Educations = () => {
             <h2 className="my-2 font-semibold uppercase">
               {USER_COURSE} - {USER_COLLEGE}
             </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>{USER_COLLEGE_DESCRIPTION}</p>
           </div>
         </div>
       </div>
