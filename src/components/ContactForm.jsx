@@ -26,7 +26,7 @@ const ContactForm = () => {
     const response = await fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...formData, name: "contact" }),
+      body: JSON.stringify({ ...formData, "form-name": "contact" }),
     });
 
     if (response.ok) {
@@ -45,14 +45,13 @@ const ContactForm = () => {
     <form
       className="md:w-[60%] pt-4"
       onSubmit={handleSubmitForm}
-      name="contact"
-      netlify
+      data-netlify="true"
     >
-      {/* <input type="hidden" name="form-name" value={"contact"} /> */}
+      <input type="hidden" name="form-name" value={"contact"} />
       <input
         type="hidden"
         name="redirect"
-        value={"https://sarimulbio.netlify.app/thank-you"}
+        value={"https://sarimulbio.netlify.app/"}
       />
       <input
         type="text"
