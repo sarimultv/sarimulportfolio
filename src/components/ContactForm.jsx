@@ -25,7 +25,7 @@ const ContactForm = () => {
 
     const response = await fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: JSON.stringify({ ...formData, "form-name": "contact" }),
     });
 
@@ -46,6 +46,7 @@ const ContactForm = () => {
       className="md:w-[60%] pt-4"
       onSubmit={handleSubmitForm}
       data-netlify="true"
+      netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value={"contact"} />
       <input
