@@ -4,7 +4,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="md:h-screen">
+    <div className="md:h-screen pb-2">
       <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-20 pt-6">
         Contact <span className="text-yellow-500">Me</span>
       </h1>

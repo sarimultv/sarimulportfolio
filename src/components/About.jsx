@@ -2,7 +2,7 @@ import { FaDownload } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div className="md:h-screen md:w-screen">
+    <div className="md:h-screen md:w-screen pb-2">
       <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-20 pt-6">
         About <span className="text-yellow-500">Me</span>
       </h1>
