@@ -1,50 +1,104 @@
 import { FaDownload } from "react-icons/fa6";
+import Skills from "./Skills";
+import Educations from "./Educations";
+import { useSelector } from "react-redux";
+import Border from "./Border";
 
 const About = () => {
+  const mode = useSelector((store) => store.appTheme.mode);
   return (
-    <div className="md:h-screen md:w-screen pb-2">
-      <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-20 pt-6">
+    <div className="md:w-[100%] pb-2">
+      <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-5 pt-6">
         About <span className="text-yellow-500">Me</span>
       </h1>
-      <div className="md:flex md:items-center md:mt-20 md:ml-20 mt-4">
+      <div className="md:flex md:items-center md:mt-20 md:ml-20 mt-4 mb-6">
         <div className="md:w-[50%] md:mr-10 p-2">
           <h1 className="uppercase font-bold text-2xl mb-4">Personal Info</h1>
           <div className="md:flex md:items-center mb-4">
             <div className="md:mr-2">
               <p className="mb-2 flex items-center gap-2">
-                <span className="text-gray-500">First Name: </span> Sarimul
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  First Name:{" "}
+                </span>{" "}
+                Sarimul
               </p>
 
               <p className="mb-2 flex items-center gap-2">
-                <span className="text-gray-500">Middle Name: </span>
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  Middle Name:{" "}
+                </span>
                 <span>Hoque</span>
               </p>
 
               <p className="mb-2 flex items-center gap-2">
-                <span className="text-gray-500">Last Name: </span>{" "}
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  Last Name:{" "}
+                </span>{" "}
                 <span>Laskar</span>
               </p>
 
               <p className="flex items-center gap-2">
-                <span className="text-gray-500">Nationality: </span>
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  Nationality:{" "}
+                </span>
                 <span>Indian</span>
               </p>
             </div>
             <div className="md:ml-10">
               <p className="mb-2 flex items-center gap-2">
-                <span className="text-gray-500">Email: </span>
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  Email:{" "}
+                </span>
                 <span>sarimullaskar.sh@gmail.com</span>
               </p>
               <p className="mb-2 flex items-center gap-2">
-                <span className="text-gray-500">Phone: </span>
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  Phone:{" "}
+                </span>
                 <span>+91 7896086210</span>
               </p>
               <p className="mb-2 flex items-center gap-2">
-                <span className="text-gray-500">Languages: </span>
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  Languages:{" "}
+                </span>
                 <span>English, Bengali, Hindi</span>
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-gray-500">Github: </span>
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  Github:{" "}
+                </span>
                 <span>sarimultv</span>
               </p>
             </div>
@@ -75,6 +129,10 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Border />
+      <Skills />
+      <Border />
+      <Educations />
     </div>
   );
 };

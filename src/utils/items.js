@@ -2,7 +2,7 @@ export const items = [
   {
     id: "01",
     projectName: "moviesland",
-    projectURL: "https://moviesland.web.app/",
+    projectURL: "https://moviesland-e7bfe.web.app/",
     githubLink: "https://github.com/sarimultv/moviesland.git",
     imageSrc: "./thumbnail.png",
     description: "",
