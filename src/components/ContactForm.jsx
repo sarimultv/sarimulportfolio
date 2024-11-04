@@ -26,7 +26,7 @@ const ContactForm = () => {
     const response = await fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: JSON.stringify({ ...formData, "form-name": "contact" }),
+      body: JSON.stringify({ "form-name": "contact", ...formData }),
     });
 
     if (response.ok) {
@@ -46,16 +46,12 @@ const ContactForm = () => {
       className="md:w-[60%] pt-4"
       onSubmit={handleSubmitForm}
       data-netlify="true"
-      netlify-honeypot="bot-field"
     >
-      <input type="hidden" name="form-name" value={"contact"} />
-      <input
-        type="hidden"
-        name="redirect"
-        value={"https://sarimulbio.netlify.app/"}
-      />
+      <input type="hidden" name="form-name" value="contact" />
+
       <input
         type="text"
+        name="name"
         ref={userName}
         className="p-2 border border-gray-500 outline-yellow-500 bg-transparent rounded-2xl md:w-[43%] w-[100%] md:mr-4 md:mb-4 mb-2"
         placeholder="Enter Your Name"
@@ -63,6 +59,7 @@ const ContactForm = () => {
 
       <input
         type="email"
+        name="email"
         ref={userEmail}
         className="p-2 border border-gray-500 outline-yellow-500 bg-transparent rounded-2xl md:w-[43%] w-[100%] md:ml-4 md:mb-4 mb-2"
         placeholder="Enter Your Email"
