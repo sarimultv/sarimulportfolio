@@ -1,4 +1,3 @@
-import React from "react";
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
 import {
   USER_COLLEGE,

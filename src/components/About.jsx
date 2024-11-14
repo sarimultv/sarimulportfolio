@@ -1,10 +1,8 @@
-import { FaDownload } from "react-icons/fa6";
 import Skills from "./Skills";
 import Educations from "./Educations";
 import { useSelector } from "react-redux";
 import Border from "./Border";
 import BannerPhoto from "./BannerPhoto";
-import { Link } from "react-router-dom";
 
 const About = () => {
   const mode = useSelector((store) => store.appTheme.mode);
@@ -13,7 +11,7 @@ const About = () => {
   const resumeFileName = "Sarimul_Laskar.pdf";
 
   return (
-    <div className="md:w-[100%] pb-2">
+    <div className="md:w-[100%] max-sm:p-2">
       <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-5 pt-6">
         About <span className="text-yellow-500">Me</span>
       </h1>
@@ -23,7 +21,7 @@ const About = () => {
           <span className="sm:hidden block">
             <BannerPhoto />
           </span>
-          <div className="md:flex md:items-center mb-4">
+          <div className="md:flex md:items-center mb-4 max-sm:mt-4">
             <div className="md:mr-2">
               <p className="mb-2 flex items-center gap-2">
                 <span
@@ -31,45 +29,11 @@ const About = () => {
                     mode === "white" ? "text-gray-500" : "text-gray-200"
                   }`}
                 >
-                  First Name:{" "}
+                  Name:{" "}
                 </span>{" "}
-                Sarimul
+                Sarimul Hoque Laskar
               </p>
 
-              <p className="mb-2 flex items-center gap-2">
-                <span
-                  className={` ${
-                    mode === "white" ? "text-gray-500" : "text-gray-200"
-                  }`}
-                >
-                  Middle Name:{" "}
-                </span>
-                <span>Hoque</span>
-              </p>
-
-              <p className="mb-2 flex items-center gap-2">
-                <span
-                  className={` ${
-                    mode === "white" ? "text-gray-500" : "text-gray-200"
-                  }`}
-                >
-                  Last Name:{" "}
-                </span>{" "}
-                <span>Laskar</span>
-              </p>
-
-              <p className="flex items-center gap-2">
-                <span
-                  className={` ${
-                    mode === "white" ? "text-gray-500" : "text-gray-200"
-                  }`}
-                >
-                  Nationality:{" "}
-                </span>
-                <span>Indian</span>
-              </p>
-            </div>
-            <div className="md:ml-10">
               <p className="mb-2 flex items-center gap-2">
                 <span
                   className={` ${
@@ -80,7 +44,7 @@ const About = () => {
                 </span>
                 <span>sarimullaskar.sh@gmail.com</span>
               </p>
-              <p className="mb-2 flex items-center gap-2">
+              <p className="flex items-center gap-2">
                 <span
                   className={` ${
                     mode === "white" ? "text-gray-500" : "text-gray-200"
@@ -88,19 +52,11 @@ const About = () => {
                 >
                   Phone:{" "}
                 </span>
-                <span>+91 7896086210</span>
+                <span>+91 7002609020</span>
               </p>
+            </div>
+            <div className="md:ml-10">
               <p className="mb-2 flex items-center gap-2">
-                <span
-                  className={` ${
-                    mode === "white" ? "text-gray-500" : "text-gray-200"
-                  }`}
-                >
-                  Languages:{" "}
-                </span>
-                <span>English, Bengali, Hindi</span>
-              </p>
-              <p className="flex items-center gap-2">
                 <span
                   className={` ${
                     mode === "white" ? "text-gray-500" : "text-gray-200"
@@ -109,6 +65,26 @@ const About = () => {
                   Github:{" "}
                 </span>
                 <span>sarimultv</span>
+              </p>
+              <p className="mb-2 flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  LinkedIn:{" "}
+                </span>
+                <span>sarimulhoquelaskar</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "white" ? "text-gray-500" : "text-gray-200"
+                  }`}
+                >
+                  Languages:{" "}
+                </span>
+                <span>English, Bengali, Hindi</span>
               </p>
             </div>
           </div>

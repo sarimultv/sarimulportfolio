@@ -3,7 +3,7 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <div className="md:w-screen md:h-screen pb-2">
+    <div className="md:w-screen md:h-screen max-sm:p-2">
       <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-20 pt-6">
         My <span className="text-yellow-500">Portfolio</span>
       </h1>

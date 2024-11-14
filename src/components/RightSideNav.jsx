@@ -17,7 +17,7 @@ const RightSideNav = () => {
   const mode = useSelector((store) => store.appTheme.mode);
 
   return (
-    <div className="md:w-[5%] md:mr-10 bottom-0 sticky md:bg-transparent bg-gray-800 py-2">
+    <div className="md:w-[5%] md:mr-10 max-sm:bottom-0 max-sm:fixed max-sm:w-[100%] md:bg-transparent bg-gray-800 py-2">
       <ul className="md:flex-col flex items-center gap-4 justify-evenly">
         <Link to={"/"}>
           <li className="flex justify-center items-center md:p-5 p-3 bg-gray-200 text-black rounded-full hover:bg-yellow-500 hover:text-white active:bg-yellow-500">

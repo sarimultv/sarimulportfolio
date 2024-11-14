@@ -9,13 +9,13 @@ import BannerPhoto from "./BannerPhoto";
 
 const Banner = () => {
   return (
-    <div className="md:px-10 md:py-7 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 w-full h-full p-4">
+    <div className="md:px-10 md:py-7 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 max-sm:px-4 pt-6">
       <div className="md:flex md:items-center md:justify-between">
         <BannerPhoto />
         <div className="md:w-[50%]">
           <div className="font-bold md:py-5 py-2">
             <h1 className="md:text-4xl text-2xl uppercase">
-              - I'm <span className="text-yellow-500">{USER_NAME}</span>.
+              - I&apos;m <span className="text-yellow-500">{USER_NAME}</span>.
             </h1>
             <h1 className="md:text-lg capitalize">
               {USER_ROLE}, {USER_COMPANY}
