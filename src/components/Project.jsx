@@ -18,7 +18,9 @@ const Project = ({ item }) => {
       </div>
       <hr />
       <div className="pt-3">
-        <img className="rounded-lg" src={imageSrc} alt="projects thumbnail" />
+        <Link to={projectURL}>
+          <img className="rounded-lg" src={imageSrc} alt="projects thumbnail" />
+        </Link>
       </div>
     </div>
   );

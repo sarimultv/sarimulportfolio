@@ -7,10 +7,10 @@ const ContactPage = () => {
       </p>
       <div className="flex justify-center items-center gap-4 pt-6">
         <a href="https://wa.me/7002609020" target="_blank">
-          <button className="border border-yellow-500 hover:bg-yellow-500 hover:text-white flex items-center justify-center md:py-2 pl-4 p-1 cursor-pointer  md:text-2xl  rounded-lg  ">
-            WhatsApp!{" "}
+          <button className="border border-yellow-500 hover:bg-yellow-500 hover:text-white flex items-center justify-center md:py-2 py-4 cursor-pointer md:text-2xl rounded-lg pl-2 pr-1">
+            WhatsApp
             <img
-              className="md:w-16 w-12"
+              className="md:w-16 w-7 object-cover"
               src="./whatsapp.png"
               alt="whatsapp thumbnail"
             />
@@ -19,7 +19,8 @@ const ContactPage = () => {
 
         <a href="mailto:sarimullaskar.shl@gmail.com">
           <button className="border border-yellow-500 hover:bg-yellow-500 hover:text-white flex items-center justify-center cursor-pointer max-w-[300px]:mt-3 md:text-2xl md:p-6 p-4 rounded-lg">
-            <span className="hidden sm:block">Contact me via </span> Email
+            <span className="hidden sm:block">Contact me via </span> Email{" "}
+            <span className="sm:hidden"> me</span>
           </button>
         </a>
       </div>

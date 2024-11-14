@@ -12,7 +12,7 @@ const Banner = () => {
     <div className="md:px-10 md:py-7 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 max-sm:px-4 pt-6">
       <div className="md:flex md:items-center md:justify-between">
         <BannerPhoto />
-        <div className="md:w-[50%]">
+        <div className="md:w-[50%] mt-2">
           <div className="font-bold md:py-5 py-2">
             <h1 className="md:text-4xl text-2xl uppercase">
               - I&apos;m <span className="text-yellow-500">{USER_NAME}</span>.
@@ -23,7 +23,7 @@ const Banner = () => {
           </div>
           <div className="md:w-[90%] pb-4">
             <p className="pt-2">{USER_INTRO}</p>
-            <div className="md:flex md:items-center md:pt-10 flex justify-center pt-5">
+            <div className="md:flex md:items-center md:pt-10 flex justify-center pt-8">
               <ul>
                 <Link to={"/about"}>
                   <li className="font-bold uppercase p-4 border border-yellow-500 rounded-2xl cursor-pointer hover:bg-yellow-500 hover:text-white">
