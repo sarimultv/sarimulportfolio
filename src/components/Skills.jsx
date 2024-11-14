@@ -8,7 +8,7 @@ const Skills = () => {
         My Skills
       </h1>
       <div className="md:w-[100%] my-5">
-        <ul className="flex items-center justify-evenly flex-wrap">
+        <ul className="flex items-center md:justify-evenly justify-center flex-wrap">
           {skills.map((item) => (
             <Skill key={item.id} skills={item} />
           ))}

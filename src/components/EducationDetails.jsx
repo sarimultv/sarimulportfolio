@@ -12,7 +12,7 @@ const EducationDetails = () => {
   const mode = useSelector((store) => store.appTheme.mode);
   return (
     <div className="md:w-[100%] md:my-10 flex items-center justify-center md:ml-5 mt-6">
-      <ul className="relative md:-mt-14 -mt-[9rem]">
+      <ul className="relative md:-mt-20 -mt-[9rem]">
         <li className="my-2 p-3 rounded-full bg-yellow-500 text-white">
           <PiSuitcaseSimpleBold size={20} />
         </li>

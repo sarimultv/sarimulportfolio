@@ -5,19 +5,25 @@ import {
   USER_ROLE,
 } from "../utils/constants";
 import { Link } from "react-router-dom";
-import BannerPhoto from "./BannerPhoto";
+import BannerShimmer from "./BannerShimmer";
+import { lazy, Suspense } from "react";
 
 const Banner = () => {
+  const BannerPhotoLazy = lazy(() => import("./BannerPhoto"));
+
   return (
     <div className="md:px-10 md:py-7 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 max-sm:px-4 pt-6">
       <div className="md:flex md:items-center md:justify-between">
-        <BannerPhoto />
+        <Suspense fallback={<BannerShimmer />}>
+          <BannerPhotoLazy />
+        </Suspense>
+
         <div className="md:w-[50%] mt-2">
           <div className="font-bold md:py-5 py-2">
-            <h1 className="md:text-4xl text-2xl uppercase">
+            <h1 className="md:text-4xl text-[1.4rem] uppercase">
               - I&apos;m <span className="text-yellow-500">{USER_NAME}</span>.
             </h1>
-            <h1 className="md:text-lg capitalize">
+            <h1 className="md:text-lg max-sm:text-sm capitalize md:pl-[1.40rem] max-sm:pl-3">
               {USER_ROLE}, {USER_COMPANY}
             </h1>
           </div>

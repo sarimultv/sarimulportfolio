@@ -1,14 +1,15 @@
 import { useSelector } from "react-redux";
+import { contactDetails } from "../utils/contactDetails";
 
 const ContactDetails = () => {
+  const { header, headerDetails, userAddress, userEmail, userMobile } =
+    contactDetails;
+
   const mode = useSelector((store) => store.appTheme.mode);
   return (
     <div className="md:w-[40%] md:ml-10">
-      <h1 className="uppercase font-bold text-3xl mb-3">Don't Feel Shy !</h1>
-      <p className="w-[97%] py-2">
-        Feel free to get in touch with me. I am always open to discussing new
-        projects, creative ideas or opportunities to be part of your visions.
-      </p>
+      <h1 className="uppercase font-bold text-3xl mb-3">{header}</h1>
+      <p className="w-[97%] py-2">{headerDetails}</p>
       <div className="md:my-2 my-3 flex gap-2 items-center">
         <span
           className={`uppercase ${
@@ -17,7 +18,7 @@ const ContactDetails = () => {
         >
           Address:
         </span>
-        <p>Hi-Tech City, Hyderabad, Telangana</p>
+        <p>{userAddress}</p>
       </div>
 
       <div className="my-2 flex gap-2 items-center">
@@ -28,7 +29,7 @@ const ContactDetails = () => {
         >
           Mail Me:
         </span>{" "}
-        <p className="cursor-pointer">sarimullaskar.shl@gmail.com</p>
+        <p className="cursor-pointer">{userEmail}</p>
       </div>
       <div className="my-2 flex gap-2 items-center">
         <span
@@ -38,7 +39,7 @@ const ContactDetails = () => {
         >
           Call Me:
         </span>
-        <p className="cursor-pointer">+91 7002609020</p>
+        <p className="cursor-pointer">+91 {userMobile}</p>
       </div>
     </div>
   );

@@ -42,6 +42,7 @@ const ContactForm = () => {
   };
 
   return (
+    // not in use now
     <form
       className="md:w-[60%] pt-4"
       onSubmit={handleSubmitForm}

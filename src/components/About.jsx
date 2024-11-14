@@ -2,13 +2,28 @@ import Skills from "./Skills";
 import Educations from "./Educations";
 import { useSelector } from "react-redux";
 import Border from "./Border";
-import BannerPhoto from "./BannerPhoto";
+import { contactDetails } from "../utils/contactDetails";
+import { lazy, Suspense } from "react";
+import BannerShimmer from "./BannerShimmer";
 
 const About = () => {
   const mode = useSelector((store) => store.appTheme.mode);
 
   const resumeFileUrl = "./Sarimul_Laskar.pdf";
   const resumeFileName = "Sarimul_Laskar.pdf";
+
+  const {
+    userName,
+    githubUserName,
+    linkedInUserName,
+    languageKnown,
+    yearsOfExp,
+    projectComp,
+    userEmail,
+    userMobile,
+  } = contactDetails;
+
+  const BannerPhotoLazy = lazy(() => import("./BannerPhoto"));
 
   return (
     <div className="md:w-[100%] max-sm:p-2">
@@ -18,9 +33,11 @@ const About = () => {
       <div className="md:flex md:items-center md:mt-20 md:ml-20 mt-4 mb-6">
         <div className="md:w-[50%] md:mr-10 p-2">
           <h1 className="uppercase font-bold text-2xl mb-4">Personal Info</h1>
-          <span className="sm:hidden block">
-            <BannerPhoto />
-          </span>
+          <div className="sm:hidden block">
+            <Suspense fallback={<BannerShimmer />}>
+              <BannerPhotoLazy />
+            </Suspense>
+          </div>
           <div className="md:flex md:items-center mb-4 max-sm:mt-4">
             <div className="md:mr-2">
               <p className="mb-2 flex items-center gap-2">
@@ -31,7 +48,7 @@ const About = () => {
                 >
                   Name:{" "}
                 </span>{" "}
-                Sarimul Hoque Laskar
+                {userName}
               </p>
 
               <p className="mb-2 flex items-center gap-2">
@@ -42,9 +59,9 @@ const About = () => {
                 >
                   Email:{" "}
                 </span>
-                <span>sarimullaskar.sh@gmail.com</span>
+                <span>{userEmail}</span>
               </p>
-              <p className="flex items-center gap-2">
+              <p className="mb-2 flex items-center gap-2">
                 <span
                   className={` ${
                     mode === "white" ? "text-gray-500" : "text-gray-200"
@@ -52,7 +69,7 @@ const About = () => {
                 >
                   Phone:{" "}
                 </span>
-                <span>+91 7002609020</span>
+                <span>+91 {userMobile}</span>
               </p>
             </div>
             <div className="md:ml-10">
@@ -64,7 +81,7 @@ const About = () => {
                 >
                   Github:{" "}
                 </span>
-                <span>sarimultv</span>
+                <span>{githubUserName}</span>
               </p>
               <p className="mb-2 flex items-center gap-2">
                 <span
@@ -74,7 +91,7 @@ const About = () => {
                 >
                   LinkedIn:{" "}
                 </span>
-                <span>sarimulhoquelaskar</span>
+                <span>{linkedInUserName}</span>
               </p>
               <p className="flex items-center gap-2">
                 <span
@@ -84,7 +101,7 @@ const About = () => {
                 >
                   Languages:{" "}
                 </span>
-                <span>English, Bengali, Hindi</span>
+                <span>{languageKnown}</span>
               </p>
             </div>
           </div>
@@ -101,14 +118,16 @@ const About = () => {
         <div className="md:w-[50%] p-2 flex items-center justify-center flex-wrap">
           <div className="border border-gray-500 rounded-lg p-4 m-2 w-[45%] h-[10rem]">
             <p className="text-4xl font-bold my-2 text-yellow-500">
-              4<sup>+</sup>
+              {yearsOfExp}
+              <sup>+</sup>
             </p>
             <hr />
             <p className="uppercase my-2">Years of Experience</p>
           </div>
           <div className="border border-gray-500 rounded-lg p-4 m-2 w-[45%] h-[10rem]">
             <p className="text-4xl font-bold my-2 text-yellow-500">
-              3<sup>+</sup>
+              {projectComp}
+              <sup>+</sup>
             </p>
             <hr />
             <p className="uppercase my-2">Completed Projects</p>
