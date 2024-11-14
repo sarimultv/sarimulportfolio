@@ -16,6 +16,7 @@ const Banner = () => {
       <div className="md:flex md:items-center md:justify-between">
         <Suspense fallback={<BannerShimmer />}>
           <BannerPhotoLazy />
+          {/* <BannerShimmer /> */}
         </Suspense>
 
         <div className="md:w-[50%] mt-2">
