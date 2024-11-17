@@ -1,6 +1,9 @@
 import {
   USER_COMPANY,
   USER_INTRO,
+  USER_INTRO_DESC,
+  USER_INTRO_DESC2,
+  USER_INTRO_DESC3,
   USER_NAME,
   USER_ROLE,
 } from "../utils/constants";
@@ -12,7 +15,7 @@ const Banner = () => {
   const BannerPhotoLazy = lazy(() => import("./BannerPhoto"));
 
   return (
-    <div className="md:px-10 md:py-7 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 max-sm:px-4 pt-6">
+    <div className="md:px-10 md:py-7 md:h-screen md:bg-gradient-to-r md:from-yellow-500 md:to-40 max-sm:px-4 pt-6 max-sm:pb-20">
       <div className="md:flex md:items-center md:justify-between">
         <Suspense fallback={<BannerShimmer />}>
           <BannerPhotoLazy />
@@ -30,6 +33,9 @@ const Banner = () => {
           </div>
           <div className="md:w-[90%] pb-4">
             <p className="pt-2">{USER_INTRO}</p>
+            <p className="mt-4">{USER_INTRO_DESC}</p>
+            <p className="mt-4">{USER_INTRO_DESC2}</p>
+            <p className="mt-4">{USER_INTRO_DESC3}</p>
             <div className="md:flex md:items-center md:pt-10 flex justify-center pt-8">
               <ul>
                 <Link to={"/about"}>

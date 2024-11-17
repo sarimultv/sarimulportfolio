@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div className="md:w-[100%] max-sm:p-2">
       <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-5 pt-6">
-        About <span className="text-yellow-500">Me</span>
+        About <span className="text-yellow-500 ml-1">Me</span>
       </h1>
       <div className="md:flex md:items-center md:mt-20 md:ml-20 mt-4 mb-6">
         <div className="md:w-[50%] md:mr-10 p-2">
@@ -81,7 +81,9 @@ const About = () => {
                 >
                   Github:{" "}
                 </span>
-                <span>{githubUserName}</span>
+                <a href="https://github.com/sarimultv" target="_blank">
+                  <span>{githubUserName}</span>
+                </a>
               </p>
               <p className="mb-2 flex items-center gap-2">
                 <span
@@ -91,7 +93,12 @@ const About = () => {
                 >
                   LinkedIn:{" "}
                 </span>
-                <span>{linkedInUserName}</span>
+                <a
+                  href="https://www.linkedin.com/in/sarimulhoquelaskar/"
+                  target="_blank"
+                >
+                  <span>{linkedInUserName}</span>
+                </a>
               </p>
               <p className="flex items-center gap-2">
                 <span

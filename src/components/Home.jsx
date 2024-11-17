@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import Banner from "./Banner";
 import RightSideNav from "./RightSideNav";
 import { Outlet } from "react-router-dom";
 
@@ -10,7 +9,7 @@ const Home = () => {
   return (
     <div
       style={{ backgroundColor: `${mode}`, color: `${textColor}` }}
-      className="md:flex md:items-center min-h-screen"
+      className="md:flex min-h-screen"
     >
       <Outlet />
       <RightSideNav />
