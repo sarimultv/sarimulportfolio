@@ -26,7 +26,7 @@ const About = () => {
   const BannerPhotoLazy = lazy(() => import("./BannerPhoto"));
 
   return (
-    <div className="md:w-[100%] max-sm:p-2">
+    <div className="md:w-[100%] max-sm:py-2 max-sm:px-4">
       <h1 className="uppercase font-bold text-4xl flex justify-center md:pt-20 pt-6">
         About <span className="text-yellow-500 ml-1">Me</span>
       </h1>

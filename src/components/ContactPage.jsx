@@ -9,7 +9,7 @@ const ContactPage = () => {
         Please feel free to contact me, should you need any additional
         information or clarification. I’m just one text away!
       </p>
-      <div className="flex justify-center items-center gap-4 pt-2">
+      <div className="flex justify-center items-center gap-4 pt-8">
         <a href={`https://wa.me/${userMobile}`} target="_blank">
           <button className="border border-yellow-500 hover:bg-yellow-500 hover:text-white flex items-center justify-center md:py-3 md:pl-4 py-3 cursor-pointer md:text-2xl rounded-lg pl-2 pr-1">
             WhatsApp

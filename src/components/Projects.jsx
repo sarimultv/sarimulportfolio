@@ -6,7 +6,7 @@ const Projects = () => {
   const Project = lazy(() => import("./Project"));
 
   return (
-    <div className="md:w-screen md:h-screen max-sm:p-4 max-sm:pb-20">
+    <div className="md:w-screen md:h-screen max-sm:px-4 max-sm:py-2 max-sm:pb-20">
       <h1 className="uppercase font-bold text-4xl flex justify-center md:pt-20 pt-6">
         My <span className="text-yellow-500 ml-1">Portfolio</span>
       </h1>
