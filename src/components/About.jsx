@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <div className="md:w-[100%] max-sm:p-2">
-      <h1 className="uppercase font-bold text-4xl flex justify-center md:mt-5 pt-6">
+      <h1 className="uppercase font-bold text-4xl flex justify-center md:pt-20 pt-6">
         About <span className="text-yellow-500 ml-1">Me</span>
       </h1>
       <div className="md:flex md:items-center md:mt-20 md:ml-20 mt-4 mb-6">
@@ -123,7 +123,7 @@ const About = () => {
           </div>
         </div>
         <div className="md:w-[50%] p-2 flex items-center justify-center flex-wrap">
-          <div className="border border-gray-500 rounded-lg p-4 m-2 w-[45%] h-[10rem]">
+          <div className="border border-gray-500 rounded-lg p-4 m-2 w-[45%] h-[10rem] cursor-pointer">
             <p className="text-4xl font-bold my-2 text-yellow-500">
               {yearsOfExp}
               <sup>+</sup>
@@ -131,7 +131,8 @@ const About = () => {
             <hr />
             <p className="uppercase my-2">Years of Experience</p>
           </div>
-          <div className="border border-gray-500 rounded-lg p-4 m-2 w-[45%] h-[10rem]">
+
+          <div className="border border-gray-500 rounded-lg p-4 m-2 w-[45%] h-[10rem] cursor-pointer">
             <p className="text-4xl font-bold my-2 text-yellow-500">
               {projectComp}
               <sup>+</sup>

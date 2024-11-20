@@ -1,23 +1,23 @@
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
-import {
-  USER_COLLEGE,
-  USER_COLLEGE_DESCRIPTION,
-  USER_COURSE,
-  USER_COURSE_COMPLETION_DATE,
-  USER_COURSE_JOINING_DATE,
-} from "../utils/constants";
 import { useSelector } from "react-redux";
 
-const EducationDetails = () => {
+const EducationDetails = ({ eduDetails }) => {
   const mode = useSelector((store) => store.appTheme.mode);
+  const {
+    USER_COLLEGE,
+    USER_COLLEGE_DESCRIPTION,
+    USER_COURSE,
+    USER_COURSE_COMPLETION_DATE,
+    USER_COURSE_JOINING_DATE,
+  } = eduDetails;
   return (
     <div className="md:w-[100%] md:my-10 flex items-center justify-center md:ml-5 mt-6">
-      <ul className="relative md:-mt-20 -mt-[9rem]">
+      <ul className="relative md:-mt-[7.5rem] -mt-[9rem]">
         <li className="my-2 p-3 rounded-full bg-yellow-500 text-white">
           <PiSuitcaseSimpleBold size={20} />
         </li>
       </ul>
-      <div className="-ml-5 border-l px-8">
+      <div className="-ml-[1.30rem] border-l px-8">
         <span
           className={`px-2 py-1 rounded-3xl ${
             mode === "white" ? "bg-gray-200" : "bg-gray-900"

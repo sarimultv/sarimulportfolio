@@ -12,6 +12,7 @@ export const USER_INTRO_DESC3 =
 export const USER_COMPANY = "Posidex Technologies";
 export const USER_COMPANY_LOCATION = "Hyderabad";
 export const USER_COMPANY_JOINING_DATE = "2022";
+export const USER_COMPANY_ENDING_DATE = "PRESENT";
 export const USER_COMPANY_DESCRIPTION = "Learn, Explore & Grow.";
 export const USER_COLLEGE = "Assam University";
 export const USER_COURSE = "Computer Science & Engineering";
