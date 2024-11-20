@@ -28,7 +28,7 @@ const Project = ({ item }) => {
       </div>
       <hr />
       {showDesc ? (
-        <div className="pt-3">
+        <div className="pt-3 h-[13.7rem]">
           <p
             className="bg-gray-100 p-2 rounded-lg"
             onMouseLeave={handleHideDesc}

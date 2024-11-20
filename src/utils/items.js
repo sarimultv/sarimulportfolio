@@ -33,6 +33,6 @@ export const items = [
     githubLink: "https://github.com/sarimultv/DynamicFormGenerator.git",
     imageSrc: "./formGenerator.png",
     description:
-      "Project Requirements Survey is a dynamic form generator web app built using the tech stack React JS, React Router, JavaScript, React Redux Toolkit for global State Management, Tailwind CSS for consistent Design",
+      "Project Requirements Survey is a dynamic form generator web app built using React JS, React Router, JavaScript, React Redux Toolkit for global State Management, Tailwind CSS for consistent Design",
   },
 ];

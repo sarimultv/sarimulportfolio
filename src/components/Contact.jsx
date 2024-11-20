@@ -10,7 +10,7 @@ const Contact = () => {
       </h1>
       <div className="md:flex md:items-center md:mt-20 mt-6 max-sm:px-4">
         <ContactDetails />
-        <div className="max-w-[300px] pb-6">
+        <div className="pb-6">
           <Border />
         </div>
         <ContactPage />
