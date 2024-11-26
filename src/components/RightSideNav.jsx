@@ -56,7 +56,7 @@ const RightSideNav = () => {
   };
 
   return (
-    <div className="md:w-[5%] md:mr-10 md:mt-32 max-sm:bottom-0 max-sm:fixed max-sm:w-[100%] md:bg-transparent bg-gray-800 py-2">
+    <div className="md:w-[5%] md:mr-10 md:mt-32 max-sm:bottom-0 max-sm:fixed max-sm:w-[100%] md:bg-transparent bg-gray-800 py-4">
       <ul className="md:flex-col flex items-center gap-4 justify-evenly">
         <Link to={"/"}>
           <li
