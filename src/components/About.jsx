@@ -17,13 +17,18 @@ const About = () => {
     githubUserName,
     linkedInUserName,
     languageKnown,
-    yearsOfExp,
+    jobStartingYear,
+    jobStartingMonth,
     projectComp,
     userEmail,
     userMobile,
   } = contactDetails;
 
   const BannerPhotoLazy = lazy(() => import("./BannerPhoto"));
+
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth() + 1;
 
   return (
     <div className="md:w-[100%] max-sm:py-2 max-sm:px-4">
@@ -125,7 +130,8 @@ const About = () => {
         <div className="md:w-[50%] p-2 flex items-center justify-center flex-wrap">
           <div className="border border-gray-500 rounded-lg p-4 m-2 w-[45%] h-[10rem] cursor-pointer">
             <p className="text-4xl font-bold my-2 text-yellow-500">
-              {yearsOfExp}
+              {/* {yearsOfExp} */}
+              {currentYear - jobStartingYear}.{currentMonth - jobStartingMonth}
               <sup>+</sup>
             </p>
             <hr />

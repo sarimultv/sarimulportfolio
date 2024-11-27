@@ -7,11 +7,15 @@ const Project = ({ item }) => {
   const [showDesc, setShowDesc] = useState(false);
 
   const handleShowDesc = () => {
-    setShowDesc(true);
+    setTimeout(() => {
+      setShowDesc(true);
+    }, 200);
   };
 
   const handleHideDesc = () => {
-    setShowDesc(false);
+    setTimeout(() => {
+      setShowDesc(false);
+    }, 200);
   };
 
   return (

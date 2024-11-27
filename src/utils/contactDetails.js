@@ -5,6 +5,8 @@ export const contactDetails = {
   linkedInUserName: "sarimulhoquelaskar",
   languageKnown: "English, Bengali, Hindi",
   yearsOfExp: "2.9",
+  jobStartingYear: "2021",
+  jobStartingMonth: "9",
   projectComp: "3",
   header: "Don't Feel Shy !",
   headerDetails:
